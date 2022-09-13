@@ -2,6 +2,7 @@
 
 /**
  * _putchar - write character and print
+ * @c: character to print out
  *
  * Return: success (1), on error -1
  */
