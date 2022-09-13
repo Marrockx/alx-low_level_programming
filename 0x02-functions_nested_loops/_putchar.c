@@ -1,13 +1,11 @@
-#include <stdio.h>
-#include "main.h"
+#include <unistd.h>
 
 /**
- * main - entry point of program
+ * _putchar - write character and print
  *
- * Return: 0
+ * Return: success (1), on error -1
  */
-int main(void)
+int _putchar(char c)
 {
-	printPutChar();
-	return (0);
+	return (write(1, &c, 1));
 }
