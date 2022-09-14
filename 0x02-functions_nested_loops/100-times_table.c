@@ -12,7 +12,7 @@ void print_times_table(int n)
 	int i = 0;
 	int multiplier, product;
 
-	while (((n > 0) && (n < 15)) && (i <= n))
+	while (((n >= 0) && (n < 15)) && (i <= n))
 	{
 		for (multiplier = 0; multiplier <= n; multiplier++)
 		{
