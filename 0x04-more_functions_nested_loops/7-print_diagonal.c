@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_diagonal- function that draws a straight line
- * in the terminal.
+ * print_diagonal- function that draws a diagonal line
+ * on the terminal.
  * @n:  number of times the character \ should be printed
  *
  * Description: You can only use _putchar function to print
