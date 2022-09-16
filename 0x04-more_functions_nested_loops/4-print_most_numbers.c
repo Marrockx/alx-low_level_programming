@@ -5,6 +5,8 @@
  * Description: using _putchar twice
  *
  * Return: void
+ */
+
 void print_most_numbers(void)
 {
 	char num = '0';
@@ -15,6 +17,7 @@ void print_most_numbers(void)
 		{
 			_putchar(num);
 		}
+		num++;
 	}
 	_putchar('\n');
 }
