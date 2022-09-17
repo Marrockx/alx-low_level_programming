@@ -12,30 +12,15 @@
 
 int main(void)
 {
-	int i = 2, j, isPrime;
-	long int largestPrime;
+	long int i = 2, largestPrime;
 	long int num = 612852475143;
 
-	while (i <= num)
+	while (num != 1)
 	{
 		if (num % i == 0) /* if it is a factor */
 		{
-			isPrime = 1; /* set isPrime to 1, at 2 */
-			j = 2; /* prime nos start from 2 */
-
-			while (j <= i / 2) /* i factor to check prime*/
-			{
-				if (i % j == 0) /* factors that are not prime */
-				{
-					isPrime = 0; /* set pointer to 0 */
-					break;
-				}
-				j++;
-			}
-			if (isPrime == 1)
-			{
-				largestPrime = i;
-			}
+			num = num / i; /* factors range */
+			largestPrime = i;
 		}
 		i++;
 	}
