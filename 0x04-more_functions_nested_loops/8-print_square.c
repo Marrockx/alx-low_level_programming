@@ -15,10 +15,24 @@
 
 void print_square(int size)
 {
-	while (size > 0)
+	int row = 0, column;
+
+	if (size < 0 || size == 0)
 	{
-		_putchar('#');
-		size--;
+		_putchar('\n');
 	}
-	_putchar('\n');
+
+	while (size > 0 && row < size)
+	{
+		column = 0;
+
+		while (column < size)
+		{
+			_putchar('#');
+			column += 1;
+		}
+		row += 1;
+		_putchar('\n');
+	}
+
 }
