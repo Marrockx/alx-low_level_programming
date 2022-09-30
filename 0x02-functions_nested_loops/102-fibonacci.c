@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	long fib1 = 0, fib2 = 1, sum;
+	long fib1 = 1, fib2 = 1, sum;
 	int i = 0;
 
 	while (i < 50)
