@@ -13,12 +13,12 @@ int main(void)
 	unsigned long int fib1 = 1, fib2 = 1, fib_sum;
 	int i = 0;
 
-	while (i < 100)
+	while (i < 98)
 	{
 		fib_sum = fib1 + fib2;
 
 		printf("%lu", fib2);
-		if (i != 99)
+		if (i != 97)
 		{
 			printf(", ");
 		}
