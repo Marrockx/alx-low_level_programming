@@ -3,40 +3,28 @@
 /**
  * leet - encodes strings
  * @str: character to encode
- * Return: char type
+ * Return: pointer to encoded string
  */
 
 char *leet(char *str)
 {
-	int i;
+	int j = 0;
+	char ltrs[] = { 'A', 'E', 'O', 'T', 'L' };
+	char codes[] = { 4, 3, 0, 7, 1 };
+	char *res = str;
 
-	for (i = 0; str[i] != '0'; i++)
+	while (*str)
 	{
-		while (str[i] == 'A' || str[i] == 'a')
+		for (j = 0; j < 5; j++)
 		{
-			str[i] = '4';
+			if (*str == ltrs[j] || *str == ltrs[j] + 32)
+			{
+				*str = codes[j] + '0';
+			}
 		}
 
-		while (str[i] == 'E' || str[i] == 'e')
-		{
-			str[i] = '3';
-		}
-
-		while (str[i] == 'O' || str[i] == 'o')
-		{
-			str[i] = '0';
-		}
-
-		while (str[i] == 'T' || str[i] == 't')
-		{
-			str[i] = '7';
-		}
-
-		while (str[i] == 'L' || str[i] == 'l')
-		{
-			str[i] = '1';
-		}
+		str++;
 	}
 
-	return (str);
+	return (res);
 }
