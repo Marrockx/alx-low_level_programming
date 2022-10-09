@@ -13,7 +13,7 @@
  * n1 and n2 will never be empty
  * If the result can not be stored in r
  * the function must return 0
- * Return: pointer to result 
+ * Return: pointer to result
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
