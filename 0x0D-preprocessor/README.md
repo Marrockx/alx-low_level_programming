@@ -9,4 +9,8 @@
 - [x] **[4. SUM](4-sum.h)**
 ## Resource Links
 - [Object-like Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Object-like-Macros.html#Object-like-Macros)
-- [C Preprocessor and Macros](https://www.programiz.com/c-programming/c-preprocessor-macros) 
+- [C Preprocessor and Macros](https://www.programiz.com/c-programming/c-preprocessor-macros)
+- [Include Guards - Avoid Double Inclusion](https://en.wikipedia.org/wiki/Include_guard)
+- []()
+- []()
+- []()
