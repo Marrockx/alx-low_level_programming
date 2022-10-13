@@ -22,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	while (i < n)
 	{
-		str = va_arg(list, char*);
+		str = va_arg(list, char *);
 
 		if (str)
 		{
